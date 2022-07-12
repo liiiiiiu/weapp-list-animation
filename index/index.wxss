@@ -1,0 +1,11 @@
+/* 垂直列表初始动画样式 */
+.vertical-item-origin-animation {
+  opacity: 0;
+  transform: translateY(36px);
+}
+
+/* 水平列表初始动画样式 */
+.horizontal-item-origin-animation {
+  opacity: 0;
+  transform: translateX(36px);
+}

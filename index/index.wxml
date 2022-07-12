@@ -1,0 +1,13 @@
+<button style="margin-top: 30rpx; margin-bottom: 30rpx;" bindtap="showAnimation">加载列表动画</button>
+<view style="padding-left: 30rpx; padding-right: 30rpx;">
+  <view style="margin-bottom: 80rpx;">
+    <view wx:for="{{ verticalLists }}" wx:key="index" animation="{{ verticalAnimations[index] }}" class="vertical-item-origin-animation" style="margin-bottom: 15px;">
+      垂直列表：item{{ index + 1 }}
+    </view>
+  </view>
+  <view style="display: flex; flex-direction: row; align-items: center;">
+    <view wx:for="{{ horizontalLists }}" wx:key="index" animation="{{ horizontalAnimations[index] }}" class="horizontal-item-origin-animation" style="margin-right: 5px;">
+      水平列表：item{{ index + 1 }}
+    </view>
+  </view>
+</view>
